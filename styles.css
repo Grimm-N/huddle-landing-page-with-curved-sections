@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'OpenSan';
+    src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype'),
+        url('/fonts/OpenSans-VariableFont_wdth,wght.woff2') format('woff2'),
+        url('/fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-VariableFont_wght.ttf') format('truetype'),
+        url('/fonts/Poppins-VariableFont_wght.woff2') format('woff2'),
+        url('/fonts/Poppins-VariableFont_wght.woff') format('woff');
+}
+
+.clamp-logo-h {
+    width: clamp(40%, 20vw, 95%);
+}
+  
+.clamp-logo-f {
+    width: clamp(39%, 40vw, 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
