@@ -10,14 +10,19 @@
     src: url('/fonts/Poppins-VariableFont_wght.ttf') format('truetype'),
         url('/fonts/Poppins-VariableFont_wght.woff2') format('woff2'),
         url('/fonts/Poppins-VariableFont_wght.woff') format('woff');
+    font-weight: 700;
 }
 
-.clamp-logo-h {
+.clamp-logo {
     width: clamp(40%, 20vw, 95%);
 }
-  
-.clamp-logo-f {
-    width: clamp(39%, 40vw, 100%);
+
+.clamp-icon-commun {
+    width: clamp(12%, 10vw, 17%);
+}
+
+.clamp-icon-messages {
+    width: clamp(7%, 5.5vw, 17%);
 }
 
 @tailwind base;

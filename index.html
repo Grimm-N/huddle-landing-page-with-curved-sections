@@ -15,68 +15,74 @@
 </head>
 
 <body class="w-full min-h-screen flex flex-col items-center justify-center font-openSans">
-
+<!-- header -->
   <header class="flex items-center justify-between h-[10vh] w-[87.6%] max-w-[81.125rem]">
     <div class="">
-      <img class="clamp-logo-h" src="./images/logo.svg" alt="Huddle">
+      <img class="clamp-logo" src="./images/logo.svg" alt="Huddle">
     </div>
-    <button class="text-clamp-try-btn">Try It Free</button>
+    <button class="text-clamp-try-btn border border-solid rounded-2xl px-4 py-1">Try It Free</button>
   </header>
+<!-- header closed -->
 
+<!-- intro -->
   <main class="flex flex-col items-center justify-center w-[80%]">
     <div class="text-center">
-      <h1 class="font-poppins font-extrabold text-clamp-intro-title">Build The Community Your Fans Will Love</h1>
+      <h1 class="font-poppins text-clamp-intro-title">Build The Community Your Fans Will Love</h1>
       <p class="text-clamp-intro-text font-medium font-openSans">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-      <button class="">Get Started For Free</button>      
+      <button class="text-clamp-intro-btn border border-solid rounded-full px-11.5 py-2.5">Get Started For Free</button>      
     </div>
 
-    <img class="" src="./images/screen-mockups.svg">
+    <img class="" src="./images/screen-mockups.svg" alt="Mockups screen">
 
+<!-- statistic -->
     <div class="intro__statistics">
       <div class="statistic__item">
-        <img class="" src="./images/icon-communities.svg" alt="communitie icon">
-        <h2 class="">1.4k+</h2>
-        <p class="">Communities Formed</p>
+        <img class="clamp-icon-commun" src="./images/icon-communities.svg" alt="communitie icon">
+        <h2 class="text-clamp-statistic font-bold">1.4k+</h2>
+        <p class="text-clamp-intro-text">Communities Formed</p>
       </div>
 
       <div class="statistic__item">
-        <img class="" src="./images/icon-messages.svg" alt="message icon">
-        <h2 class="">2.7m+</h2>
-        <p class="">Messages Sent</p>
+        <img class="clamp-icon-messages" src="./images/icon-messages.svg" alt="message icon">
+        <h2 class="text-clamp-statistic-messages font-bold">2.7m+</h2>
+        <p class="text-clamp-intro-text">Messages Sent</p>
       </div>
     </div>
   </main>
 
-  <section>
-    <div class="section__content">
-      <h2>Grow Together</h2>
-      <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+  <!-- grow together -->
+  <section class="w-[85%] text-center flex flex-col justify-center items-center">
+    <div class="order-last">
+      <h2 class="font-poppins text-clamp-section-title">Grow Together</h2>
+      <p class="text-clamp-section-text">Generate meaningful discussions with your audience and build a strong, loyal community. 
         Think of the insightful conversations you miss out on with a feedback form.</p>
     </div>
-    <img class="section__image" alt="">
+    <img class="order-first w-[80%]" src="./images/illustration-grow-together.svg" alt="Grow together">
   </section>
 
-  <section>
-    <img class="section__image" alt="">
+  <!-- flowing conversation -->
+  <section class="w-[85%] text-center flex flex-col justify-center items-center">
+    <img class="w-[80%]" src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
     <div class="section__content">
-      <h2>Flowing Conversations</h2>
-      <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+      <h2 class="font-poppins text-clamp-section-title">Flowing Conversations</h2>
+      <p class="text-clamp-section-text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
         just-in-time loading for a more natural flow.</p>
     </div>
   </section>
 
-  <section>
+  <!-- your users -->
+  <section class="w-[85%] text-center flex flex-col justify-center items-center">
     <div class="section__content">
-      <h2>Your Users</h2>
-      <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+      <h2 class="font-poppins text-clamp-section-title">Your Users</h2>
+      <p class="text-clamp-section-text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
         once signed in to your app, your users can start chatting immediately.</p>
     </div>
-    <img class="section__image" alt="">
+    <img class="order-first w-[80%]" src="./images/illustration-your-users.svg" alt="Your Users">
   </section>
  
-  <div>
-    <h3>Ready To Build Your Community?</h3>
-    <button>Get Started For Free</button>
+  <div class="flex flex-col items-center justify-center w-[80%] text-center">
+    <h3 class="font-poppins text-clamp-section-title">Ready To Build Your Community?</h3>
+    <button class="text-clamp-intro-btn border border-solid rounded-full px-11 py-2.5">Get Started For Free</button>
   </div>
 
   <footer>
