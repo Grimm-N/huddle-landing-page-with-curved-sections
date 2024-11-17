@@ -20,12 +20,34 @@
   width: clamp(40%, 20vw, 95%);
 }
 
+.clamp-logo-footer {
+  width: clamp(12.75rem, 16vw, 17rem);
+}
+
 .clamp-icon-commun {
-  width: clamp(12%, 10vw, 17%);
+  width: clamp(13%, 10vw, 17%);
 }
 
 .clamp-icon-messages {
   width: clamp(7%, 5.5vw, 17%);
+}
+
+.clamp-section-img {
+  width: clamp(16.25rem, 40vw, 32.5rem);
+}
+
+.clamp-social {
+  width: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
 }
 
 *, ::before, ::after {
@@ -584,6 +606,26 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
 .order-first {
   order: -9999;
 }
@@ -598,6 +640,34 @@ video {
 
 .h-\[10vh\] {
   height: 10vh;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[14vh\] {
+  height: 14vh;
+}
+
+.h-\[12vh\] {
+  height: 12vh;
+}
+
+.h-\[11vh\] {
+  height: 11vh;
+}
+
+.h-\[1vh\] {
+  height: 1vh;
+}
+
+.h-\[18vh\] {
+  height: 18vh;
+}
+
+.h-\[vh\] {
+  height: vh;
 }
 
 .min-h-screen {
@@ -652,6 +722,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -660,14 +734,28 @@ video {
   border-style: solid;
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-pink-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-1 {
@@ -675,29 +763,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -712,6 +785,10 @@ video {
   font-family: Poppins, sans-serif;
 }
 
+.text-clamp-btn-section {
+  font-size: clamp(1.5rem, 2.75vw, 3rem);
+}
+
 .text-clamp-intro-btn {
   font-size: clamp(0.75rem, 2.5vw, 1.25rem);
 }
@@ -722,6 +799,10 @@ video {
 
 .text-clamp-intro-title {
   font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.text-clamp-newsletter {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 .text-clamp-section-text {
@@ -737,7 +818,7 @@ video {
 }
 
 .text-clamp-statistic-messages {
-  font-size: clamp(3.3rem, 5vw, 6rem);
+  font-size: clamp(3.3rem,7vw, 6rem);
 }
 
 .text-clamp-try-btn {
@@ -750,4 +831,38 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.wave-svg {
+  position: absolute;
+  top: 0px;
+  display: block;
+  width: 100%;
+  transform: scaley(-1);
+}
+
+.parallax > use {
+  animation: move-forever 12s linear infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
 }
