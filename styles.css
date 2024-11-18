@@ -14,7 +14,8 @@
 }
 
 .clamp-logo {
-    width: clamp(40%, 20vw, 95%);
+    width: clamp(50%, 21vw, 97%);
+    max-width: clamp(12rem, 20vw, 20rem);
 }
 
 .clamp-logo-footer {
@@ -22,19 +23,86 @@
 }
 
 .clamp-icon-commun {
-    width: clamp(13%, 10vw, 17%);
+    width: clamp(1.9rem, 3.26vw, 3.75rem);
 }
 
 .clamp-icon-messages {
-    width: clamp(7%, 5.5vw, 17%);
+    width: clamp(1.5rem, 2.78vw, 3.5rem);
+}
+
+.statistic-margin {
+    margin-top: clamp(1rem, 1vw, 1.25rem);
+    margin-bottom: clamp(1rem, 3vw, 3rem);
 }
 
 .clamp-section-img {
-    width: clamp(16.25rem, 40vw, 32.5rem);
+    width: clamp(16.5rem, 40vw, 32.5rem);
 }
 
 .clamp-social {
     width: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.clamp-header {
+    margin-top: clamp(3vw, 5.3vw, 7vw);
+    margin-bottom: clamp(3vw, 5.3vw, 7vw);
+}
+
+.clamp-header-btn {
+    padding-top: clamp(0.25rem, 1.11vw, 0.5rem);
+    padding-bottom: clamp(0.25rem, 1.11vw, 0.5rem);
+    padding-right: clamp(1rem, 2vw, 2.5rem);
+    padding-left: clamp(1rem, 2vw, 2.5rem);
+}
+
+.clamp-main-btn {
+    padding-top: clamp(0.65rem, 1.65vw, 1.75rem);
+    padding-bottom: clamp(0.65rem, 1.65vw, 1.75rem);
+    padding-right: clamp(2.5rem, 7vw, 7rem);
+    padding-left: clamp(2.5rem, 7vw, 7rem);
+}
+
+.margin-main {
+    margin-top: clamp(6.25rem, 10.75vw, 9.75rem);
+    margin-bottom: clamp(6.25rem, 10.75vw, 9.75rem);
+}
+
+.main-gap {
+    gap: clamp(6.25rem, 10vw, 6.5rem);
+}
+
+.main-text-gap {
+    gap: clamp(1.25rem, 1.5vw, 3rem);
+}
+
+.main-text-width {
+    width: clamp(100%, 75%, 50%);
+}
+
+.statistic-gap {
+    gap: clamp(6rem, 10vw, 8rem);
+}
+
+.section-margin {
+    margin-top: clamp(5.5rem, 10.75vw, 9.75rem);
+    margin-bottom: clamp(9rem, 10.75vw, 9.75rem);
+}
+
+.section-gap {
+    gap: clamp(4.5rem, 10vw, 8rem);
+}
+
+.section-text-gap {
+    gap: clamp(1rem, 1vw, 1.5rem);
+}
+
+.btn-section-margin {
+    margin-top: clamp(8.75rem, 10.75vw, 9.75rem);
+    margin-bottom: clamp(15rem, 10.75vw, 9.75rem);
+}
+
+.btn-section-gap {
+    gap: clamp(2.5rem, 2.5vw, 3.5rem);
 }
 
 @layer utilities {

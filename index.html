@@ -16,13 +16,13 @@
 
 <body class="w-full min-h-screen flex flex-col items-center justify-center font-openSans">
 <!-- header -->
-  <header class="flex items-center justify-center relative h-[11vh] w-full">
+  <header class="flex items-center justify-center relative h-auto w-full clamp-header">
     <!-- waves -->
-    <div class="absolute z-[-1] inset-0">
+    <!-- <div class="absolute z-[-1] inset-0">
       <svg class="wave-svg"
            xmlns="http://www.w3.org/2000/svg"
            xmlns:xlink="http://www.w3.org/1999/xlink"
-           viewBox="0 24 150 28"
+           viewBox="0 24 150 40"
            preserveAspectRatio="none">
         <defs>
           <path id="gentle-wave"
@@ -34,52 +34,52 @@
                    v44h-352z" />
         </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#6422b8" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#6422b8" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#a548ff" />
         </g>
       </svg>
-    </div>
+    </div> -->
     <!-- content -->
-    <div class="flex justify-between z-2 w-[87.6%] max-w-[81.125rem]">
-      <div class="">
+    <div class="flex items-center justify-between z-2 w-[87.6%] max-w-[81.125rem]">
+      <div class="items-center">
         <img class="clamp-logo" src="./images/logo.svg" alt="Huddle">
       </div>
-      <button class="text-clamp-try-btn border border-solid rounded-2xl px-4 py-1">Try It Free</button>
+      <button class="text-clamp-try-btn border border-solid rounded-full clamp-header-btn">Try It Free</button>
     </div>
-    
+
   </header>
 <!-- header closed -->
 
 <!-- intro -->
-  <main class="flex flex-col items-center justify-center w-[80%]">
-    <div class="text-center">
+  <main class="flex flex-col items-center justify-center w-[80%] main-gap margin-main">
+    <div class=" flex flex-col text-center main-text-gap">
       <h1 class="font-poppins text-clamp-intro-title">Build The Community Your Fans Will Love</h1>
-      <p class="text-clamp-intro-text font-medium font-openSans">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-      <button class="font-semibold text-clamp-intro-btn border border-solid rounded-full px-11 py-2.5">Get Started For Free</button>      
+      <p class="text-clamp-intro-text font-medium font-openSans w-[100%] sm:w-[85%] md:w-[70%] lg:w-[58%] xl:w-[55%] self-center">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+      <button class="font-semibold text-clamp-intro-btn border border-solid rounded-full clamp-main-btn mt-7 lg:mt-6 mx-auto">Get Started For Free</button>      
     </div>
 
     <img class="" src="./images/screen-mockups.svg" alt="Mockups screen">
 
 <!-- statistic -->
-    <div class="intro__statistics">
-      <div class="statistic__item">
+    <div class="flex flex-col sm:flex-row text-center statistic-gap mt-6 md:mt-5 lg:mt-3">
+      <div class="flex flex-col sm:grid sm:grid-rows-[2.9rem_auto_auto]">
         <img class="clamp-icon-commun" src="./images/icon-communities.svg" alt="communitie icon">
-        <h2 class="text-clamp-statistic font-bold">1.4k+</h2>
-        <p class="text-clamp-intro-text">Communities Formed</p>
+        <h2 class="text-clamp-statistic font-bold leading-none mt-[0.9rem] mb-[1rem] sm:statistic-margin">1.4k+</h2>
+        <p class="text-clamp-statistic-text self-center">Communities Formed</p>
       </div>
 
-      <div class="statistic__item">
+      <div class="flex flex-col sm:grid sm:grid-rows-[2.9rem_auto_auto]">
         <img class="clamp-icon-messages" src="./images/icon-messages.svg" alt="message icon">
-        <h2 class="text-clamp-statistic-messages font-bold">2.7m+</h2>
-        <p class="text-clamp-intro-text">Messages Sent</p>
+        <h2 class="text-clamp-statistic-messages font-bold leading-none my-[0.9rem] sm:statistic-margin">2.7m+</h2>
+        <p class="text-clamp-statistic-text break-words w-[50%] sm:w-[100%] self-center">Messages Sent</p>
       </div>
     </div>
   </main>
 
-  <!-- grow together -->
-  <section class="w-[85%] text-center flex flex-col justify-center items-center">
-    <div class="order-last">
+  <!-- grow together --> 
+  <section class="w-[85%] text-center flex flex-col justify-center items-center section-gap section-margin">
+    <div class="order-last flex flex-col section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Grow Together</h2>
       <p class="text-clamp-section-text">Generate meaningful discussions with your audience and build a strong, loyal community. 
         Think of the insightful conversations you miss out on with a feedback form.</p>
@@ -88,9 +88,9 @@
   </section>
 
   <!-- flowing conversation -->
-  <section class="w-[85%] text-center flex flex-col justify-center items-center">
-    <img class="clamp-section-img" src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
-    <div class="section__content">
+  <section class="w-[85%] text-center flex flex-col justify-center items-center section-gap section-margin">
+    <img class="clamp-section-img mb-4" src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+    <div class="flex flex-col section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Flowing Conversations</h2>
       <p class="text-clamp-section-text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
         just-in-time loading for a more natural flow.</p>
@@ -98,17 +98,17 @@
   </section>
 
   <!-- your users -->
-  <section class="w-[85%] text-center flex flex-col justify-center items-center">
-    <div class="section__content">
+  <section class="w-[85%] text-center flex flex-col justify-center items-center section-gap section-margin">
+    <div class="flex flex-col section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Your Users</h2>
       <p class="text-clamp-section-text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
         once signed in to your app, your users can start chatting immediately.</p>
     </div>
-    <img class="order-first clamp-section-img" src="./images/illustration-your-users.svg" alt="Your Users">
+    <img class="order-first clamp-section-img mb-3" src="./images/illustration-your-users.svg" alt="Your Users">
   </section>
  
   <!-- button section -->
-  <div class="flex flex-col items-center justify-center w-[80%] text-center">
+  <div class="flex flex-col items-center justify-center w-[80%] text-center btn-section-margin btn-section-gap">
     <h3 class="font-poppins text-clamp-btn-section">Ready To Build Your Community?</h3>
     <button class="font-semibold text-clamp-intro-btn border border-solid rounded-full px-11 py-2.5">Get Started For Free</button>
   </div>
