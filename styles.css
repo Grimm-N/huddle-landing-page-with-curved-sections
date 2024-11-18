@@ -30,11 +30,6 @@
     width: clamp(1.5rem, 2.78vw, 3.5rem);
 }
 
-.statistic-margin {
-    margin-top: clamp(1rem, 1vw, 1.25rem);
-    margin-bottom: clamp(1rem, 3vw, 3rem);
-}
-
 .clamp-section-img {
     width: clamp(16.5rem, 40vw, 32.5rem);
 }
@@ -89,7 +84,7 @@
 }
 
 .section-gap {
-    gap: clamp(4.5rem, 10vw, 8rem);
+    gap: clamp(4.5rem, 15vw, 15rem);
 }
 
 .section-text-gap {
