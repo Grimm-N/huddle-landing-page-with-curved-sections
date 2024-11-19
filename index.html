@@ -16,9 +16,9 @@
 
 <body class="w-full min-h-screen flex flex-col items-center justify-center font-openSans">
 <!-- header -->
-  <header class="flex items-center justify-center relative h-auto w-full clamp-header">
-    <!-- waves -->
-    <!-- <div class="absolute z-[-1] inset-0">
+  <header class="flex items-center justify-center h-auto w-full clamp-header">
+    <!-- waves header -->
+    <div class="absolute z-[-1] inset-0">
       <svg class="wave-svg"
            xmlns="http://www.w3.org/2000/svg"
            xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,20 +32,27 @@
                    58-18 88-18 
                    58 18 88 18
                    v44h-352z" />
+          
+          <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#181818; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#2d2d2d; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#000000; stop-opacity:1" />
+          </linearGradient>
         </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#6422b8" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#6422b8" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#a548ff" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="url(#wave-gradient)" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="url(#wave-gradient)" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#000000" />
         </g>
       </svg>
-    </div> -->
+    </div>
+
     <!-- content -->
     <div class="flex items-center justify-between z-2 w-[87.6%] max-w-[81.125rem]">
       <div class="items-center">
         <img class="clamp-logo" src="./images/logo.svg" alt="Huddle">
       </div>
-      <button class="text-clamp-try-btn border border-solid rounded-full clamp-header-btn">Try It Free</button>
+      <button id="headerButton" class="text-clamp-try-btn text-white border border-solid rounded-full clamp-header-btn">Try It Free</button>
     </div>
 
   </header>
@@ -56,29 +63,29 @@
     <div class=" flex flex-col text-center main-text-gap">
       <h1 class="font-poppins text-clamp-intro-title">Build The Community Your Fans Will Love</h1>
       <p class="text-clamp-intro-text font-medium font-openSans w-[100%] sm:w-[85%] md:w-[70%] lg:w-[58%] xl:w-[55%] self-center">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-      <button class="font-semibold text-clamp-intro-btn border border-solid rounded-full clamp-main-btn mt-7 lg:mt-6 mx-auto">Get Started For Free</button>      
+      <button id="mainButton" class="bg-custom-blue font-semibold text-clamp-intro-btn border border-solid rounded-full clamp-main-btn mt-7 lg:mt-6 mx-auto">Get Started For Free</button>      
     </div>
 
-    <img class="" src="./images/screen-mockups.svg" alt="Mockups screen">
+    <img class="grayscale invert" src="./images/screen-mockups.svg" alt="Mockups screen">
 
 <!-- statistic -->
     <div class="flex flex-col sm:flex-row text-center statistic-gap mt-3 sm:w-full sm:max-w-[54.5rem] sm:justify-between">
       <div class="flex flex-col sm:grid sm:grid-rows-[2.69rem_auto_auto]">
         <img class="clamp-icon-commun ml-2" src="./images/icon-communities.svg" alt="communitie icon">
-        <h2 class="text-clamp-statistic font-bold leading-none mt-[0.9rem] mb-[1rem] sm:mt-[0.8rem] sm:mb-[1.6rem]">1.4k+</h2>
+        <h2 class="text-clamp-statistic font-bold leading-none mt-[0.9rem] mb-[1rem] sm:mt-[0.8rem] sm:mb-[1.6rem] gradient-text">1.4k+</h2>
         <p class="text-clamp-statistic-text self-center">Communities Formed</p>
       </div>
 
       <div class="flex flex-col sm:grid sm:grid-rows-[2.69rem_auto_auto]">
         <img class="clamp-icon-messages ml-2" src="./images/icon-messages.svg" alt="message icon">
-        <h2 class="text-clamp-statistic-messages font-bold leading-none mt-[0.9rem] mb-[0.9rem] sm:mt-[0.8rem] sm:mb-[1.6rem]">2.7m+</h2>
+        <h2 class="text-clamp-statistic-messages font-bold leading-none mt-[0.9rem] mb-[0.9rem] sm:mt-[0.8rem] sm:mb-[1.6rem] gradient-text">2.7m+</h2>
         <p class="text-clamp-statistic-text break-words w-[50%] sm:w-[100%] self-center">Messages Sent</p>
       </div>
     </div>
   </main>
 
   <!-- grow together --> 
-  <section class="w-[85%] text-center flex flex-col md:flex-row justify-center items-center section-gap section-margin">
+  <section class="w-[85%] sm:max-w-[72.63rem] text-center flex flex-col md:flex-row justify-center items-center section-gap section-margin">
     <div class="order-last md:order-first md:text-left flex flex-col section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Grow Together</h2>
       <p class="text-clamp-section-text">Generate meaningful discussions with your audience and build a strong, loyal community. 
@@ -88,9 +95,9 @@
   </section>
 
   <!-- flowing conversation -->
-  <section class="w-[85%] text-center flex flex-col justify-center items-center section-gap section-margin">
-    <img class="clamp-section-img mb-4" src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
-    <div class="flex flex-col section-text-gap">
+  <section class="w-[85%] sm:max-w-[74rem] text-center flex flex-col md:flex-row justify-center items-center section-gap section-margin">
+    <img class="clamp-section-img mb-4 md:mb-0" src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+    <div class="flex flex-col md:text-left section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Flowing Conversations</h2>
       <p class="text-clamp-section-text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
         just-in-time loading for a more natural flow.</p>
@@ -98,32 +105,33 @@
   </section>
 
   <!-- your users -->
-  <section class="w-[85%] text-center flex flex-col justify-center items-center section-gap section-margin">
-    <div class="flex flex-col section-text-gap">
+  <section class="w-[85%] sm:max-w-[74rem] text-center flex flex-col md:flex-row justify-center items-center section-gap section-margin">
+    <div class="order-last md:order-first flex flex-col md:text-left section-text-gap">
       <h2 class="font-poppins text-clamp-section-title">Your Users</h2>
       <p class="text-clamp-section-text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
         once signed in to your app, your users can start chatting immediately.</p>
     </div>
-    <img class="order-first clamp-section-img mb-3" src="./images/illustration-your-users.svg" alt="Your Users">
+    <img class="order-first md:order-last clamp-section-img mb-3 md:mb-0" src="./images/illustration-your-users.svg" alt="Your Users">
   </section>
  
   <!-- button section -->
   <div class="flex flex-col items-center justify-center w-[80%] text-center btn-section-margin btn-section-gap">
     <h3 class="font-poppins text-clamp-btn-section">Ready To Build Your Community?</h3>
-    <button class="font-semibold text-clamp-intro-btn border border-solid rounded-full px-11 py-2.5">Get Started For Free</button>
+    <button id="startedButton" class="font-semibold bg-custom-blue text-clamp-intro-btn border border-solid rounded-full clamp-main-btn">Get Started For Free</button>
   </div>
 
-  <footer class="bg-blue-500 flex flex-col items-center w-full">
-    <div class="w-[87.6%] max-w-[81.125rem]">
-      <div class="">
-        <div>
+  <footer class="flex items-center justify-center w-full h-auto bg-black text-white">
+    
+    <div class="flex flex-col md:flex-row w-[82%] max-w-[81.125rem]">
+      <div class="flex flex-col self-center news-col-gap">
+        <div class="flex flex-col news-gap">
           <p class="font-bold text-clamp-newsletter uppercase">Newsletter</p>
-          <p class="text-clamp-section-text">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          <p class="text-clamp-section-text leading-[2]">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
             send you spam or pass on your email address</p>
         </div>
-        <div class="">
+        <div class="flex flex-col md:flex-row input-gap">
           <input class="w-full p-3 rounded-md" placeholder="Your email address..." required>
-          <button class="bg-pink-400 font-semibold text-clamp-section-text rounded-md px-11 py-3">Subscribe</button>
+          <button class="bg-pink-400 font-semibold text-clamp-section-text rounded-md px-11 py-3 ml-auto">Subscribe</button>
         </div>
       </div>
       
@@ -200,6 +208,6 @@
     </div>
     
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

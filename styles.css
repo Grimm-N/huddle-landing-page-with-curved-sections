@@ -80,19 +80,19 @@
 
 .section-margin {
     margin-top: clamp(5.5rem, 10.75vw, 9.75rem);
-    margin-bottom: clamp(9rem, 10.75vw, 9.75rem);
+    margin-bottom: clamp(10rem, 10.75vw, 9.75rem);
 }
 
 .section-gap {
-    gap: clamp(4.5rem, 15vw, 15rem);
+    gap: clamp(4.5rem, 10vw, 10rem);
 }
 
 .section-text-gap {
-    gap: clamp(1rem, 1vw, 1.5rem);
+    gap: clamp(0.75rem, 1.5vw, 1.75rem);
 }
 
 .btn-section-margin {
-    margin-top: clamp(8.75rem, 10.75vw, 9.75rem);
+    margin-top: clamp(7.75rem, 13vw, 12rem);
     margin-bottom: clamp(15rem, 10.75vw, 9.75rem);
 }
 
@@ -100,11 +100,28 @@
     gap: clamp(2.5rem, 2.5vw, 3.5rem);
 }
 
+.news-gap {
+    gap: clamp(1.15rem, 1.2vw, 1.15rem);
+}
+
+.news-col-gap {
+    gap: clamp(2rem, 2vw, 2.5rem);
+}
+
+.input-gap {
+    gap: clamp(1rem, 2vw, 2.5rem);
+}
+
 @layer utilities {
     .wave-svg {
       @apply block w-full absolute top-0;
       transform: scaley(-1);
     }
+
+    .wave-footer {
+        @apply block w-full absolute top-0;
+    }
+
   
     .parallax > use {
       animation: move-forever 12s linear infinite;
@@ -116,12 +133,19 @@
   
     .parallax > use:nth-child(2) {
       animation-delay: -2s;
-      animation-duration: 5s;
+      animation-duration: 6s;
     }
   
     .parallax > use:nth-child(3) {
       animation-delay: -4s;
-      animation-duration: 3s;
+      animation-duration: 4s;
+    }
+
+    .gradient-text {
+        background-image: linear-gradient(170.649deg, #000000 0%, #00f0ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
   }
   

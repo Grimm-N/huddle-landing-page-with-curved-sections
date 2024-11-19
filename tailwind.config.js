@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-blue': '#00f0ff',
+
+      },
       fontFamily: {
         openSans: ['OpenSan', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
