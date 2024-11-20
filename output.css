@@ -837,6 +837,10 @@ video {
   height: 100%;
 }
 
+.h-\[70rem\] {
+  height: 70rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1258,6 +1262,14 @@ video {
 
   .md\:h-\[20vw\] {
     height: 20vw;
+  }
+
+  .md\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .md\:h-\[55rem\] {
+    height: 55rem;
   }
 
   .md\:w-\[60\%\] {
