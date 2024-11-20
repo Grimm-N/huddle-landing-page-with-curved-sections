@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'OpenSan';
 
-  src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype'),
-        url('/fonts/OpenSans-VariableFont_wdth,wght.woff2') format('woff2'),
-        url('/fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
+  src: url('./fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype'),
+        url('./fonts/OpenSans-VariableFont_wdth,wght.woff2') format('woff2'),
+        url('./fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
 }
 
 @font-face {
