@@ -26,6 +26,9 @@ module.exports = {
         'clamp-btn-section': 'clamp(1.5rem, 2.75vw, 3rem)', 
         'clamp-newsletter': 'clamp(1.2rem, 1.5vw, 1.5rem)', 
       },
+      screens: {
+        'xs': '32.5rem', 
+      },
     },
   },
   plugins: [],

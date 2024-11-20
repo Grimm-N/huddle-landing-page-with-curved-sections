@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // header btn
     const headerButton = document.getElementById('headerButton');
   
     headerButton.addEventListener('mouseover', () => {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerButton.style.color = '#ffffff'
     });
 
+    // main btn
     const mainButton = document.getElementById('mainButton');
   
     mainButton.addEventListener('mouseover', () => {
@@ -33,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mainButton.style.color = '#000000'
     });
 
+    // started section btn
     const startedButton = document.getElementById('startedButton');
   
     startedButton.addEventListener('mouseover', () => {
@@ -52,3 +55,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
   
+
+// email error
+document.addEventListener("DOMContentLoaded", function() {
+    const emailInput = document.getElementById('subscribeInput');
+    const errorNotice = document.getElementById('errorNotice');
+    const submitButton = document.getElementById('subscribeButton');
+
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        const email = emailInput.value;
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+            errorNotice.classList.remove('hidden');
+        } else {
+            errorNotice.classList.add('hidden');
+            console.log("Email submitted:", email);
+        }
+    });
+
+    emailInput.addEventListener('input', function() {
+        errorNotice.classList.add('hidden'); 
+    });
+});
