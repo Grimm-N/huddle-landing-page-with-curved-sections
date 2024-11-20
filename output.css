@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'Poppins';
 
-  src: url('/fonts/Poppins-VariableFont_wght.ttf') format('truetype'),
-        url('/fonts/Poppins-VariableFont_wght.woff2') format('woff2'),
-        url('/fonts/Poppins-VariableFont_wght.woff') format('woff');
+  src: url('./fonts/Poppins-VariableFont_wght.ttf') format('truetype'),
+        url('./fonts/Poppins-VariableFont_wght.woff2') format('woff2'),
+        url('./fonts/Poppins-VariableFont_wght.woff') format('woff');
 
   font-weight: 700;
 }
